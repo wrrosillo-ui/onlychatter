@@ -1,0 +1,149 @@
+/* Imports  */
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+:root{
+  /* Background Color */
+  --prim1: #2e62ff;
+  /* Font Color */
+  --text1: #000000;
+  --text2: #fff;
+
+  /* Font */
+  --knewave : "Knewave", system-ui;
+  --poppins : "Poppins", sans-serif;
+}
+
+/* Body  */
+
+body{
+  background: linear-gradient(165deg,hsla(0, 0%, 0%, 0.746), hsla(0, 0%, 0%, 0.639)), url(images/BACKGROUND.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-color:  black;
+
+  font-family: var(--poppins);
+  cursor: default;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+a{
+  text-decoration: none;
+}
+
+.main h2{
+  font-family: var(--knewave);
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--prim1);
+  text-shadow: 0px 0px 10px #001249;
+}
+
+.main h6{
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--text2);
+  text-align: justify;
+}
+
+.main h4{
+  margin-top: -5%;
+  color:  white;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 10px;
+  text-shadow: 2px 2px black;
+}
+
+ .badge{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  gap: 15px;
+  padding: 20px;
+  background-color: hsla(0, 0%, 0%, 0.765);
+  border: 2px solid var(--prim1);
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.badge img{
+  width: 25px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.badge span {
+  color: var(--text2);
+  font-weight: 600;
+  font-size: 15px;
+  white-space: nowrap;       /* prevents text wrapping */
+}
+
+.skill h5{
+  font-weight: 300;
+  font-size: 17px;
+  color:  var(--text2);
+  text-shadow: 0px 0px 10px black;
+}
+
+.box { 
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 0%, 0.554);
+  border: 2px solid var(--prim1);
+
+  border-radius: 20px;
+}
+.box i{
+  color: var(--text2);
+  font-size: 30px;
+}
+
+.box .head { 
+  color: white;
+}
+
+.box span{
+  
+  color: var(--prim1);
+}
+
+.bttn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: var(--prim1);
+  color: var(--text2);
+  border: 2px solid var(--prim1);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
+
+  width: 75%;
+}
+
+.bttn:hover{
+  box-shadow: 0px 0px 10px var(--prim1);
+  color: var(--text1);
+  transition: 0.35s ease-in-out;
+}
